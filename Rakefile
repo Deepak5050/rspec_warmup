@@ -5,6 +5,7 @@ task :default => :run
 desc "Run caesar's cipher"
 task :run do 
 	ruby "-w lib/cipher.rb"
+	ruby "-w lib/advanced_building_blocks.rb"
 end
 
 desc "Run tests on caesar's cipher"
