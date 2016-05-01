@@ -2,9 +2,8 @@ require './lib/cipher'
 
 describe "cipher" do 
 
-	it "raises error if improper arguments given" do 
-		expect {caesar_cipher("What a string!", 5)}.not_to raise_error(ArgumentError)
-		expect {caesar_cipher("What a string!", 'five')}.to raise_error(TypeError)
+	it "raises error if improper arguments given" do 			
+		expect { caesar_cipher("What a string!", 'five') }.to raise_error(TypeError)
 	end
 
 
